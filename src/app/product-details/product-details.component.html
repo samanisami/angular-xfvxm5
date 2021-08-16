@@ -1,1 +1,4 @@
-<span> جزئیات محصول</span>
+<div *ngIf='product'>
+  <h1>{{product.name}}</h1>
+  <h2>{{product.price | currency}}</h2>
+  <h3 *ngIf='product.description'>{{product.description}}
