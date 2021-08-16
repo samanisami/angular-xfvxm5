@@ -12,6 +12,6 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit() {
     const productId = Number(this.route.snapshot.paramMap.get('productId'));
-    this.product = products.find(s => (s.id === productId));
+    this.product = products.find(s => s.id === productId);
   }
 }
